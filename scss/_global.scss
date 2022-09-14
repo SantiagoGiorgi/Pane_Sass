@@ -1,0 +1,12 @@
+body {
+	background-image: $gradient;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: $color_4;
+	font-size: 18px;
+	font-family: $font-family_3;
+	text-decoration: none;
+}

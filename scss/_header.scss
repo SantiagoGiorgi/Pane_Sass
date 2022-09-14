@@ -1,0 +1,44 @@
+header {
+	grid-area: header;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+nav {
+	ul {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		list-style-type: none;
+		li {
+			a {
+				padding: 6px;
+				font-size: 12px;
+				font-weight: bolder;
+				list-style-type: none;
+				position: relative;
+				font-family: $font-family_1;
+			}
+		}
+	}
+}
+li {
+	a {
+		&:after {
+			content: "";
+			position: absolute;
+			background-color: $background-color_1;
+			height: 3px;
+			width: 0;
+			left: 0;
+			bottom: -10px;
+			transition: 0.3s;
+		}
+		&:hover {
+			color: $color_1;
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+}

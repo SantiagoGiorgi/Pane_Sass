@@ -1,0 +1,22 @@
+footer {
+	grid-area: footerRedes;
+	background: $gradientfooter;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	div {
+		p {
+			color: $color_3;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+footer.footerRedes {
+	font-size: 15px;
+	font-family: $font-family_3;
+	letter-spacing: 1px;
+	position: relative;
+	animation: text 3s 1;
+	width: 100%;
+}
