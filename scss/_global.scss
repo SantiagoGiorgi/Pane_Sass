@@ -10,3 +10,15 @@ body {
 	font-family: $font-family_3;
 	text-decoration: none;
 }
+
+@mixin flexColumn{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+}
+
+$estilosT: (
+	shadowT: 2px 4px 8px,
+	borderR: 10px,
+	fontWgrande: 700,
+	)
