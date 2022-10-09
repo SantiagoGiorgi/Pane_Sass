@@ -7,13 +7,15 @@
 	<title>comprar</title>
 	<meta name="description" content="Seccion del sitio web para hacer tu pedido semanal, te lo llevamos a tu casa">
 	<meta name="keywords" content= "PAN, MASA MADRE, ARTESANAL,HARINA ORGANICA, FERMENTACION NATURAL, PAN DE CAMPO, PAN DE MOLDE, ENVIOS, CABA">
+	 <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 		<header>
 			<img src="../assets/img/pane.png" alt="logo" width="200" height="200">
 			<nav>
-				<ul class="MenuInicial">
+				<ul>
 					<li><a href="../index.html">INICIO</a></li>
 					<li><a href="comprar.html">COMPRAR</a></li>
 					<li><a href="producto.html">PRODUCTOS</a></li>
@@ -26,46 +28,52 @@
 			<img src="../assets/img/zapalloIndex2.jpg">
 		</section>
 			<section class="encabezadoInicio">
-			<h1>HACE TU PEDIDO</h1>
+			<h1>Hacé tu pedido</h1>
 		</section>	
-		<section class="form">	
-			<form action="#">
-				<label for="text">Nombre: <br>
-					<input type="text" placeholder="" name="text"><br>
-				</label>
-				<label for="whastsapp">Whatsapp: <br>
-					<input type="whatsapp" placeholder="" name="whatsapp"><br>
-				</label>
-				<label for="direccion"> Direccion de entrega<br>
-					<textarea placeholder=""></textarea>
-				</label> <br>
-				Que pan te gustaria pedir? <br> 
-		    	<select name="pan" id="pan"> 
-					<option value="x">Integral con semillas</option>
-					<option value="y">Blanco</option>
-					<option value="z">Zapallo</option>
-				</select> <br>
-				<label for="cantidad">Cantidad: <br>
-					<input type="cantidad" placeholder="" name="cantidad"><br>
-				</label>
-				<div>Formato: <br>
-					<input type="radio" name="formato" value="campo"> Campo
-					<input type="radio" name="formato" value="molde"> Molde
-				</div>
-				<div> Te gustaria agregar algun producto? <br>
-					<select name="productos" id="productos"> 
-						<option value="foccacia">Foccacia</option>
-						<option value="queso">Scones de Queso</option>
-						<option value="hamburguesa">Pan de Hamburguesa</option>
-					</select> <br>
-				</div>
-				<div> <p>Queres recibir mas informacion?
-					<input type="checkbox" name="acepta" value="1"> </p>
-				</div>
-				<input type="submit" value="si">
-				<input type="reset" value="limpiar">
-			</form>
-		</section>	
+		<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Nombre:</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Apellido:</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Whatsapp:</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="indicar entre-calles">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Direccíon de entrega:</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Caba o Bs As">
+  </div>
+  <div class="col-md-6">
+  	<label for="floatingTextarea"class="form-label">¿Qué te enviamos?:</label>
+  	<textarea class="form-control" placeholder="Indicar la forma de los panes y cantidades" id="floatingTextarea"></textarea>
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Franja horaria para la entrega:</label>
+    <select id="inputState" class="form-select">
+      <option selected>Mañana</option>
+      <option>Tarde</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Preferencia Horaria:</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Recibir promociones semanales
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Enviar pedido</button>
+  </div>
+</form>	
 			<br> </br>
 		<footer class= "footerRedes">
 			<div class=footerRedes>

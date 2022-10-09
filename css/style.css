@@ -5,10 +5,10 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #3f3f3f;
+  color: #3f3f3f ;
   font-size: 18px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 header {
   grid-area: header;
@@ -16,12 +16,14 @@ header {
   justify-content: space-around;
   flex-wrap: wrap; }
 
+
 nav ul {
   display: flex;
   height: 100%;
   align-items: center;
   list-style-type: none; }
   nav ul li a {
+    color: #3f3f3f !important;
     padding: 6px;
     font-size: 12px;
     font-weight: bolder;
@@ -156,6 +158,10 @@ section.imagenesProducto {
   letter-spacing: 1px;
   position: relative;
   animation: text 3s 1; }
+  .preguntas p {
+    font-size: 15px;
+    font-weight: 500;
+  }
 
 section.form {
   display: flex;
@@ -180,6 +186,11 @@ footer.footerRedes {
   position: relative;
   animation: text 3s 1;
   width: 100%; }
+
+  form {
+    margin: 20px;
+    padding: 20px;
+  }
 
 @media screen and (min-width: 768px) {
   nav ul li a {
